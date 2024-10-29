@@ -94,7 +94,7 @@ for(sub in submissions){
   res_frame <- rbind(res_frame, data.frame(sub, question, answers[1], answers[2], answers[3], answers[4]))
 }
 
-
+write_csv2(res_frame, here("data", "results.csv"))
 # test stuff
 qasep = separators[2]
 asep = separators[2]
